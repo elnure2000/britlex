@@ -1,0 +1,26 @@
+@import "vars";
+
+.menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  max-width: 772px;
+  min-height: 30px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: $dark;
+  &__link {
+    text-decoration: none;
+  }
+  &__list + &__list {
+    margin-left: 35px;
+  }
+  &__list:nth-child(8) {
+    margin-left: 0;
+  }
+}
